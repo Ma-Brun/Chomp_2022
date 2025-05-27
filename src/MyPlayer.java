@@ -46,6 +46,7 @@ public class MyPlayer {
                     rowIndex = board[col] - 1;
                     System.out.printf("Fallback move: column %d, row %d%n", col, rowIndex);
                     col = 0; //fallback move
+                    return new Point(rowIndex, col1);
                 }
             }
             return new Point(rowIndex, col); // fallback move if the board is losing
